@@ -3,7 +3,7 @@ onload = () => {
   const c = setTimeout(() => {
     document.body.classList.remove("not-loaded");
 
-    const titles = ('Chúc Kiều Anh một ngày lễ vui vẻ nhé <3 luv u').split('')
+    const titles = ('Chúc Kiều Anh một ngày lễ vui vẻ nhé').split('')
     const titleElement = document.getElementById('title');
     let index = 0;
 
@@ -11,7 +11,7 @@ onload = () => {
       if (index < titles.length) {
         titleElement.innerHTML += titles[index];
         index++;
-        setTimeout(appendTitle, 200); // 1000ms delay
+        setTimeout(appendTitle, 180); // 1000ms delay
       }
     }
 
